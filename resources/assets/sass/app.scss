@@ -1,2 +1,12 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-
+@import "helpers/variables";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+//Components
+@import "components/navbar";
+@import "components/buttons";
+//Overall configuration
+@import "base/settings";
+//Pages
+@import "pages/welcome";
+@import "pages/tests";
+@import "pages/test-form";
+@import "pages/record";

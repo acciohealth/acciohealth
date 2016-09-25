@@ -1,0 +1,15 @@
+.result-header{
+  background-color: $brand-primary;
+  color: white;
+}
+.email-report{
+  border: 1px solid #eee;
+  border-radius: 3px;
+  padding: 30px;
+  h2{
+    color: $brand-primary;
+  }
+  form{
+    margin-top: 30px;
+  }
+}

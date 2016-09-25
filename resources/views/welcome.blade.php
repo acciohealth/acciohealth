@@ -1,74 +1,125 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Laravel</title>
+@extends('layouts.app')
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-        <script src="https://use.fontawesome.com/b31304ed6f.js"></script>
-
-
-        <style>
-            html, body {
-                height: 100%;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-            .container .logo img{
-                height: 300px;
-                width: auto;
-            }
-
-            .social ul{
-                list-style: none;
-                display: table;
-                margin: 0 auto;
-                padding: 0px;
-            }
-            .social ul li{
-                display: inline-block;
-                font-size: 25px;
-                padding: 0px 5px;
-            }
-
-            .social ul li a{
-              color: #ccc;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="text-center logo"><img src="{{ asset('img/logo.png') }}" alt=""></div>
-                <div class="text-center social">
-                    <ul>
-                        <li><a href="https://www.facebook.com/acciohealth/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.linkedin.com/company/7971367?trk=tyah&trkInfo=clickedVertical%3Acompany%2CentityType%3AentityHistoryName%2CclickedEntityId%3Acompany_company_company_company_company_company_7971367%2Cidx%3A0" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                        <li><a href="https://plus.google.com/101364077373445616962" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
-                        <li><a href="https://twitter.com/Accio_Health?lang=en" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.instagram.com/accio.health/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="fa fa-rss-square" aria-hidden="true"></i></a></li>
-                    </ul>
+@section('content')
+<div class="jumbotron intro-banner">
+    <div class="container-fluid">
+        <h1 class="text-center">Healthy mind, Healthy you.</h1>
+        <p class="text-center">Over 350 million people suffer from depression worldwide. We provide a self diagnostic and screening tool for stress, <br> depression and anxiety, which should be a part of primary healthcare, to help improve your overall health. e</p>
+        <p class="text-center"><a class="btn btn-primary btn-lg" href="{{ url('/tests') }}">See all tests</a></p>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="block-1 clearfix">
+            <h2 class="text-center block-title">How it works</h2>
+            <div class="col-sm-6 col-sm-push-6">
+                <div class="block-img">
+                </div>
+            </div>
+            <div class="col-sm-6 col-sm-pull-6">
+                <div class="block-text">
+                    <h3>Self tests</h3>
+                    <p>We have a range of test to evaluate you stress, anxiety or depression levels. Choose one of the test and get started.</p>
+                    {{--<p><a href="" class="btn btn-primary">Start test</a></p>--}}
                 </div>
             </div>
         </div>
-    </body>
-</html>
+    </div>
+    <div class="row">
+        <div class="block-2 clearfix">
+            <div class="col-sm-6">
+                <div class="block-img">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="block-text">
+                    <h3>Detailed evaluation</h3>
+                    <p>Once your test is complete, we provide a detailed report of your situation based on our evaluation criteria.</p>
+                    {{--<p><a href="" class="btn btn-primary">Start test</a></p>--}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="block-benefits clearfix">
+            <h2 class="text-center block-title">Benefits</h2>
+            <div class="col-sm-4 col-md-2 col-md-offset-3">
+                <p class="text-center"><i class="fa fa-globe" aria-hidden="true"></i></p>
+                <h3 class="text-center">Accessible</h3>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="col-sm-4 col-md-2">
+                <p class="text-center"><i class="fa fa-child" aria-hidden="true"></i></p>
+                <h3 class="text-center">Convenient</h3>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="col-sm-4 col-md-2">
+                <p class="text-center"><i class="fa fa-shield" aria-hidden="true"></i></p>
+                <h3 class="text-center">Secqure</h3>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="block-blog">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center block-title">From the blog</h2>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="..." alt="...">
+                        <div class="caption">
+                            <h3>Blog post title</h3>
+                            <p>Peak content of the post</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="..." alt="...">
+                        <div class="caption">
+                            <h3>Blog post title</h3>
+                            <p>Peak content of the post</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="..." alt="...">
+                        <div class="caption">
+                            <h3>Blog post title</h3>
+                            <p>Peak content of the post</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center"><a href="{{ url('blog') }}" class="btn btn-primary">View more</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="block-contact clearfix">
+            <div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+                <h2 class="text-center block-title">Get in touch</h2>
+                <p class="text-center">Our new App will be launching soon, Stay Updated.</p>
+                <form class="form-inline subscribe-form">
+                    <div class="form-group">
+                        <div class="col col-sm-8">
+                            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address">
+                        </div>
+                        <div class="col col-sm-4">
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
