@@ -12,7 +12,6 @@ class MeasuresTableSeeder extends Seeder
      */
     public function run()
     {
-        //
         $measure1 = New Measure;
         $measure1->name = 'Depression';
         $measure1->save();

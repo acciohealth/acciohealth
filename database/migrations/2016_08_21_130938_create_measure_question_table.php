@@ -12,7 +12,6 @@ class CreateMeasureQuestionTable extends Migration
      */
     public function up()
     {
-        //
         Schema::create('measure_question', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('measure_id');

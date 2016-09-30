@@ -69,34 +69,19 @@
         <div class="container">
             <div class="row">
                 <h2 class="text-center block-title">From the blog</h2>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
-                        <img src="..." alt="...">
-                        <div class="caption">
-                            <h3>Blog post title</h3>
-                            <p>Peak content of the post</p>
-                        </div>
+                @foreach( $blog_posts as $key =>$blog_post)
+                    <div class="col-sm-4">
+                        <a class="thumbnail post-card" href="{{ $blog_post->guid }}">
+                            <img src="{{ url($post_images[$key]) }}" alt="...">
+                            <div class="caption">
+                                <h3>{{ $blog_post->post_title }}</h3>
+                            </div>
+                        </a>
                     </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
-                        <img src="..." alt="...">
-                        <div class="caption">
-                            <h3>Blog post title</h3>
-                            <p>Peak content of the post</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
-                        <img src="..." alt="...">
-                        <div class="caption">
-                            <h3>Blog post title</h3>
-                            <p>Peak content of the post</p>
-                        </div>
-                    </div>
-                </div>
-                <p class="text-center"><a href="{{ url('blog') }}" class="btn btn-primary">View more</a></p>
+                @endforeach
+            </div>
+            <div>
+                <p class="text-center"><a href="{{ url('blog') }}" class="btn btn-primary">View blog</a></p>
             </div>
         </div>
     </div>

@@ -12,7 +12,6 @@ class TestsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
         $test1 = New Test;
         $test1->name = 'Dass 21';
         $test1->description = 'Test yourself for Chronic Stress, Anxiety or Depression. Stress is known to cause heart ailments, a weakened immune system, obesity, sleep disorders, chronic pain, irritable bowel syndrome and poor concentration. Stress is also the starting point for anxiety and depression. ';

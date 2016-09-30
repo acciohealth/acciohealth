@@ -8,9 +8,9 @@
             <hr>
             <form method="post">
                 {{ csrf_field() }}
-                @foreach( $test->questions as $question)
+                @foreach( $test->questions as $key => $question)
                     <div class="question-wrap" id="{{ $question->id }}">
-                        <h3>Q. {{ $question->question }}</h3>
+                        <h3>Q{{$key+1 . '.' . ' ' .$question->question }}</h3>
                         <div class="row">
                             <div class="options-wrap">
                                 @foreach( $question->options()->orderBy('score', 'asc')->get() as $option)
