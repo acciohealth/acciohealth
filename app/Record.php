@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Record extends Model
 {
     //
+    protected $fillable = ['depression', 'anxiety', 'stress', 'score'];
+
     public function options(){
         return $this->belongsToMany('App\Option');
     }

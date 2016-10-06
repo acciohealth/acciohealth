@@ -15,6 +15,7 @@ class CreateTestsTable extends Migration
         Schema::create('tests', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string('acronym');
             $table->string('description');
             $table->string('image');
             $table->boolean('active')->default(1);

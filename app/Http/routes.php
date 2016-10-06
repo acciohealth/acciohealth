@@ -16,7 +16,10 @@ Route::auth();
 Route::get('/home', 'HomeController@index');
 Route::get('/tests', 'TestController@index');
 Route::get('/test/{name}', 'TestController@showTest');
+
 Route::post('/test/1', 'TestController@dass21');
+Route::post('/test/2', 'TestController@bai');
+Route::post('/test/3', 'TestController@bdi');
 
 Route::get('/records/{id}', 'RecordController@showRecord');
 

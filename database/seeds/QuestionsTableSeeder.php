@@ -33,13 +33,13 @@ class QuestionsTableSeeder extends Seeder
         $q1->question = "I found it hard to wind down";
         $q1->test()->associate($test1);
         $q1->save();
-        $q1->measures()->attach($measure1);
+        $q1->measures()->attach($measure3);
 
         $q2 = New Question;
         $q2->question = "I was aware of dryness of my mouth";
         $q2->test()->associate($test1);
         $q2->save();
-        $q2->measures()->attach($measure1);
+        $q2->measures()->attach($measure2);
 
         $q3 = New Question;
         $q3->question = "I couldn’t seem to experience any positive feeling at all";
@@ -51,7 +51,7 @@ class QuestionsTableSeeder extends Seeder
         $q4->question = "I experienced breathing difficulty (eg, excessively rapid breathing, breathlessness in the absence of physical exertion)";
         $q4->test()->associate($test1);
         $q4->save();
-        $q4->measures()->attach($measure1);
+        $q4->measures()->attach($measure2);
 
         $q5 = New Question;
         $q5->question = "I found it difficult to work up the initiative to do things";
@@ -63,25 +63,25 @@ class QuestionsTableSeeder extends Seeder
         $q6->question = "I tended to over-react to situations";
         $q6->test()->associate($test1);
         $q6->save();
-        $q6->measures()->attach($measure1);
+        $q6->measures()->attach($measure3);
 
         $q7 = New Question;
         $q7->question = "I experienced trembling (eg, in the hands)";
         $q7->test()->associate($test1);
         $q7->save();
-        $q7->measures()->attach($measure1);
+        $q7->measures()->attach($measure2);
 
         $q8 = New Question;
         $q8->question = "I felt that I was using a lot of nervous energy";
         $q8->test()->associate($test1);
         $q8->save();
-        $q8->measures()->attach($measure1);
+        $q8->measures()->attach($measure3);
 
         $q9 = New Question;
         $q9->question = "I was worried about situationsin which I might panic and make a fool of myself";
         $q9->test()->associate($test1);
         $q9->save();
-        $q9->measures()->attach($measure1);
+        $q9->measures()->attach($measure2);
 
         $q10 = New Question;
         $q10->question = "I felt that I had nothing to look forward to";
@@ -93,13 +93,13 @@ class QuestionsTableSeeder extends Seeder
         $q11->question = "I found myself getting agitated";
         $q11->test()->associate($test1);
         $q11->save();
-        $q11->measures()->attach($measure1);
+        $q11->measures()->attach($measure3);
 
         $q12 = New Question;
         $q12->question = "I found it difficult to relax";
         $q12->test()->associate($test1);
         $q12->save();
-        $q12->measures()->attach($measure1);
+        $q12->measures()->attach($measure3);
 
         $q13 = New Question;
         $q13->question = "I felt down-hearted and blue";
@@ -111,13 +111,13 @@ class QuestionsTableSeeder extends Seeder
         $q14->question = "I was intolerant of anything that kept me from getting on with what I was doing";
         $q14->test()->associate($test1);
         $q14->save();
-        $q14->measures()->attach($measure1);
+        $q14->measures()->attach($measure3);
 
         $q15 = New Question;
         $q15->question = "I felt I was close to panic";
         $q15->test()->associate($test1);
         $q15->save();
-        $q15->measures()->attach($measure1);
+        $q15->measures()->attach($measure2);
 
         $q16 = New Question;
         $q16->question = "I was unable to become enthusiastic about anything";
@@ -135,19 +135,19 @@ class QuestionsTableSeeder extends Seeder
         $q18->question = "I felt that I was rather touchy";
         $q18->test()->associate($test1);
         $q18->save();
-        $q18->measures()->attach($measure1);
+        $q18->measures()->attach($measure3);
 
         $q19 = New Question;
         $q19->question = "I was aware of the action of my heart in the absence of physicalexertion (eg, sense of heart rate increase, heart missing a beat)";
         $q19->test()->associate($test1);
         $q19->save();
-        $q19->measures()->attach($measure1);
+        $q19->measures()->attach($measure2);
 
         $q20 = New Question;
         $q20->question = "I felt scared without any good reason";
         $q20->test()->associate($test1);
         $q20->save();
-        $q20->measures()->attach($measure1);
+        $q20->measures()->attach($measure2);
 
         $q21 = New Question;
         $q21->question = "I felt that life was meaningless";

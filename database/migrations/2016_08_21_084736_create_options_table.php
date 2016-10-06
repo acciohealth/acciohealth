@@ -16,7 +16,6 @@ class CreateOptionsTable extends Migration
             $table->increments('id');
             $table->string('description');
             $table->integer('score');
-            $table->integer('question_id');
             $table->timestamps();
         });
     }
